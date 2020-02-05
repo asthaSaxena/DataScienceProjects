@@ -1,0 +1,8 @@
+alert2=pd.read_csv("D:/Users/703261068/Downloads/data_Alert/Alert.csv",encoding='cp1252',chunksize=10000)
+
+df_chunk=[]
+for chunk in alert2:
+    
+    df_chunk.append(chunk)
+    
+df_alert2 = pd.concat(df_chunk)
